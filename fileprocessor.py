@@ -1,6 +1,6 @@
 import pandas as pd
-# Read DATA.dat file 
 
+# Read DATA.dat file 
 df1 = pd.read_csv("DATA.dat",delimiter='\t')
 
 # Read data from DATA1.dat file
@@ -9,7 +9,6 @@ df2 = pd.read_csv("DATA1.dat",delimiter='\t')
 # Making a new dataframe to combine data of two csv files
 newdf = df1._append(df2)
 
-# print("Length of unique newdf",len(newdf))
 
 # Dropping duplicates from dataframe
 result = newdf.drop_duplicates()
